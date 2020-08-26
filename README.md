@@ -19,13 +19,13 @@ sudo apt-get install python3.6
 
 Clone this repository:
 ```
-git clone https://github.com/mirkomarras/bias-recsys-tutorial.git
+git clone https://github.com/biasinrecsys/umap2020.git
 ```
 
 Install the requirements:
 
 ```
-cd bias-recsys-tutorial
+cd umap2020
 pip install -r requirements.txt
 ```
 
