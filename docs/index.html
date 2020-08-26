@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hands-on Tutorial Data and Algorithmic Bias in Recommender Systems</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro">BiasInRecSys</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#audience">Audience</a></li>
+          <li><a href="#objectives">Objectives</a></li>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Tutorial<br/> Hands on Data and Algorithmic Bias in Recommender Systems</h1>
+      <p class="mb-4 pb-0">to be held as part of the <u><a href="https://www.um.org/umap2020/" target="_blank">28th Conference on User Modeling, Adaptation and Personalization (ACM UMAP2020)</a></u></p>
+      <p class="mb-4 pb-0">July 12, 2020 - ONLINE </p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+    Aims and Scope Section
+    ============================-->
+    <section id="abstract" class="wow fadeInUp">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Abstract</h2>
+          <p>This tutorial provides a common ground for both researchers and practitioners interested in <strong>data and algorithmic bias</strong> in recommender systems. Guided by real-world
+              examples in various domains, we introduce <strong>problem space and concepts</strong> underlying bias investigation in recommendation. Then, we practically show two <strong>
+              use cases</strong>, addressing biases that lead to disparate exposure of items based on their popularity and to systematically discriminate against a legally-protected class of
+              users. Finally, we cover a range of techniques for <strong>evaluating and mitigating the impact</strong> of these biases on the recommended lists, including pre-, in-, and
+              post-processing procedures. This tutorial is accompanied by Jupyter notebooks putting into practice core concepts in data from real-world platforms.</p>
+        </div>
+      </div>
+
+    </section>
+	
+    <section id="scope" class="wow fadeInUp section-with-bg" style="padding: 60px 0 30px 0;">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2 style="margin: 10px auto 30px auto;">Scope</h2>
+            <p>Recommender systems support individuals at filtering the overwhelming alternatives our daily life offers. However, while learning patterns from historical data, such systems may
+                <strong>capture biases</strong> conveyed by the underlying data in terms of imbalances and inequalities. In many cases, recommender systems can even end up to <strong>emphasize
+                these biases</strong> in the results they provide, leading to unintended <strong>ethical and societal consequences</strong>.</p>
+            <p>Experiments conducted under <strong>offline settings</strong> with historical data are being frequently used in this field. However, they often fail in providing evidence on
+                biased situations hidden in the recommended lists, as their main focus has been for years related to the <strong>accuracy perspective only</strong>. With this in mind,
+                recent works showed that some recommenders tend to focus on a limited part of the item catalog mainly due to a <strong>popularity bias</strong>. Other studies demonstrated that
+                recommenders may generate a category-wise bias due to imbalanced rating distributions across categories. Biased patterns may also impact on users characterized by a specific common
+                sensitive attribute or on users as individuals. With the ever-increasing adoption of recommendation services, it is therefore essential for researchers and practitioners to understand
+                how to <strong>face biases and mitigate their impact</strong> on these systems.</p>
+            <p>Even though biases and their consequences are receiving more and more attention by the machine learning community, the <strong>complex ecosystems</strong> wherein recommender systems are
+                being integrated and the <strong>specificity</strong> of the modern approaches are requiring solutions tailored for the recommendation task. This tutorial is a natural continuation of our
+                work in this field, and will allow the UMAP community to delve into this area even more, with concrete and practical expertise. We cover the components of modern recommender systems based on
+                <strong>neural collaborative filtering</strong>, including how they work and their training and testing processes, with pointers to relevant literature. Then, we introduce problem space
+                and definitions of bias in recommendation, and we describe countermeasures at different levels, along with their limitations.</p>
+        </div>
+      </div>
+
+    </section>
+	
+    <section id="audience" class="wow fadeInUp" style="padding: 60px 0 30px 0;">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Audience</h2>
+            <p>This tutorial will be particularly useful for early-stage researchers and practitioners. Intermediate and experienced figures who work on user modeling and personalization
+                techniques will also find handy and practical content to deepen their knowledge in data and algorithmic bias. Participants who are not familiar with modern collaborative
+                filtering and recommender systems in general will benefit from an introductory part including foundations and key concepts on such topics. No prior knowledge on data and
+                algorithmic bias by attendees is assumed in order to attend this tutorial. </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+    Keynote Section
+    ============================-->
+    <section id="objectives" class="wow fadeInUp section-with-bg">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Objectives</h2>
+            <p>This tutorial will aim to:</p>
+              <ul>
+                <li>Raise awareness on the <strong>importance</strong> and the <strong>relevance</strong> of considering data and algorithmic bias issues in recommendation.</li>
+                <li>Play with recommendation pipelines and conduct <strong>exploratory analysis</strong> aimed at uncovering sources of bias along them.</li>
+                <li>Showcase approaches that <strong>mitigate bias</strong> along with the recommendation pipeline and assess their influence on stakeholders.</li>
+                <li>Provide an overview on the <strong>current trends and challenges</strong> in bias-aware research and identify new research directions.</li>
+              </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+    Program Section
+    ============================-->
+    <section id="structure" class="wow fadeInUp">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Structure</h2>
+
+		  <p><strong>All times are displayed in conference local time (UTC+00:00)</strong></p>
+		  <div style="margin: 10px auto 30px auto; width: 50%;">
+			  <table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Timing</th>
+					  <th scope="col">Content</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row"><strong>10:00 - 10:10</strong></th>
+					  <td><strong>Welcome Message and Connection Setup</strong></td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>10:10 - 11:30</strong></th>
+					  <td><strong>Session I: Foundations</strong></td>
+					</tr>
+					<tr>
+					  <th scope="row">10:10 - 10:20</th>
+					  <td>Recommendation Principles</td>
+					</tr>
+					<tr>
+					  <th scope="row">10:20 - 11:30</th>
+					  <td>Data and Algorithmic Bias Foudamentals</td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>11:30 - 12:00</strong></th>
+					  <td><strong>Zoom Breakout Room + Q&A</strong></td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>12:00 - 14:00</strong></th>
+					  <td><strong>Session II: Hands-on Case Studies</strong></td>
+					</tr>
+					<tr>
+					  <th scope="row">12:00 - 12:15</th>
+					  <td>Recommender Systems in Practice</td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>12:15 - 12:40</strong></th>
+					  <td>Investigation on Item Popularity Bias</td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>12:40 - 13:10</strong></th>
+					  <td>Investigation on Item Provider Fairness</td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>13:10 - 13:20</strong></th>
+					  <td><strong>Research Challenges and Emerging Opportunities</strong></td>
+					</tr>
+					<tr>
+					  <th scope="row"><strong>13:20 - 14:00</strong></th>
+					  <td><strong>Open Discussion + Q&A</strong></td>
+					</tr>
+				  </tbody>
+			  </table>
+		  </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+    Important Dates Section
+    ============================-->
+    <section id="resources" class="wow fadeInUp section-with-bg">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="https://bit.ly/BiasRecSysTutorial-Presentation-Slides">Slides</a></li>
+            <li><a href="https://bit.ly/BiasRecSysTutorial-Git">Github</a></li>
+            <li><a href="https://bit.ly/BiasRecSysTutorial-Notebook1">Notebook 1: Design and evaluation of a recommendation algorithm</a></li>
+            <li><a href="https://bit.ly/BiasRecSysTutorial-Notebook2">Notebook 2: Investigation on item popularity bias</a></li>
+            <li><a href="https://bit.ly/BiasRecSysTutorial-Notebook3">Notebook 3: Investigation on item provider fairness</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+    Committee Section
+    ============================-->
+    <section id="organizers" class="wow fadeInUp">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Organizers</h2>
+          <ul>
+            <li><a href="https://www.ludovicoboratto.com/" target="_blank">Ludovico Boratto</a>, Eurecat - Centre Tecnológic de Catalunya (Spain)</li>
+            <li><a href="https://www.mirkomarras.com/" target="_blank">Mirko Marras</a>, University of Cagliari (Italy)</li>
+          </ul>
+          </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+    Contacts Section
+    ============================-->
+    <section id="contacts" class="wow fadeInUp section-with-bg">
+
+      <div class="container-fluid">
+        <div class="section-header">
+          <h2>Contacts</h2>
+          <p>Please, reaching out to us at <strong>ludovico.boratto@acm.org</strong> and <strong>mirko.marras@unica.it</strong>.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

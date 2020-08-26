@@ -1,0 +1,6 @@
+.idea/*
+.git/*
+config/*
+env/*
+data/outputs/*
+
